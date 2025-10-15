@@ -1,0 +1,30 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#container {
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+#daysLeft, #leapYearInfo {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+  min-height: 40px;
+}
