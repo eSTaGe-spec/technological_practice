@@ -6,8 +6,16 @@ while True:
     num = random.randint(1, 100)
     print(f'Сгенерировано число: {num}')
     numbers.append(num)
-    user_input = int(input('Введите 0 для остановки или любое другое число для продолжения: '))
-    if user_input == 0:
+
+    while True:
+        user_input = input('Введите 0 для остановки или любое другое число для продолжения: ')
+        try:
+            user_input_int = int(user_input)
+            break
+        except ValueError:
+            print('Ошибка: введите корректное число.')
+
+    if user_input_int == 0:
         break
 
 print('Сгенерированные числа (кроме последнего):')
